@@ -9,3 +9,5 @@ async function connectToDatabase() {
   console.log('Connected to MongoDB');
   return client.db(process.env.DB_NAME);
 }
+
+module.exports = connectToDatabase
